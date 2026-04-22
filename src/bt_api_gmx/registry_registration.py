@@ -1,7 +1,8 @@
 from bt_api_base.balance_utils import simple_balance_handler as _gmx_balance_handler
+from bt_api_base.registry import ExchangeRegistry
+
 from bt_api_gmx.containers.exchanges.gmx_exchange_data import GmxExchangeDataSpot
 from bt_api_gmx.feeds.live_gmx.spot import GmxRequestDataSpot
-from bt_api_base.registry import ExchangeRegistry
 
 
 def register_gmx():

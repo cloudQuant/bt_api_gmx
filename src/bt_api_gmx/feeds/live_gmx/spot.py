@@ -1,11 +1,12 @@
+from bt_api_base.feeds.capability import Capability
+from bt_api_base.functions.utils import update_extra_data
+from bt_api_base.logging_factory import get_logger
+
 from bt_api_gmx.containers.exchanges.gmx_exchange_data import (
     GmxChain,
     GmxExchangeDataSpot,
 )
-from bt_api_base.feeds.capability import Capability
 from bt_api_gmx.feeds.live_gmx.request_base import GmxRequestData
-from bt_api_base.functions.utils import update_extra_data
-from bt_api_base.logging_factory import get_logger
 
 
 class GmxRequestDataSpot(GmxRequestData):

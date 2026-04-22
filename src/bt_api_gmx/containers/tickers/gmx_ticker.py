@@ -1,6 +1,8 @@
 import json
 import time
+
 from bt_api_base.containers.tickers.ticker import TickerData
+
 from bt_api_gmx.containers.tickers.ticker_utils import parse_float
 
 
