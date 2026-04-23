@@ -135,6 +135,7 @@ class GmxRequestData(Feed):
     def get_server_time(self, extra_data=None, **kwargs):
         path, params, extra_data = self._get_server_time(extra_data, **kwargs)
         import time
+
         return RequestData({"server_time": time.time()}, extra_data)
 
     def push_data_to_queue(self, data):

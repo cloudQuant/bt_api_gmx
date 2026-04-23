@@ -86,9 +86,7 @@ class GmxRequestDataSpot(GmxRequestData):
             callback=self.async_callback,
         )
 
-    def _get_kline(
-        self, symbol: str, period: str, count: int = 1000, extra_data=None, **kwargs
-    ):
+    def _get_kline(self, symbol: str, period: str, count: int = 1000, extra_data=None, **kwargs):
         request_type = "get_kline"
         path = self._params.get_rest_path("get_candles")
 
@@ -177,9 +175,7 @@ class GmxRequestDataSpot(GmxRequestData):
         path, params, extra_data = self._get_exchange_info(extra_data, **kwargs)
         return self.request(path, params, extra_data=extra_data)
 
-    def _get_depth(
-        self, symbol: str, count: int = 20, extra_data=None, **kwargs
-    ):
+    def _get_depth(self, symbol: str, count: int = 20, extra_data=None, **kwargs):
         request_type = "get_depth"
 
         extra_data = update_extra_data(
